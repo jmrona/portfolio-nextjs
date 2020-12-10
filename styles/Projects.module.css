@@ -1,0 +1,49 @@
+.container{
+    width: 100vw !important;
+    min-height: 100vh !important;
+    background:  url(../public/assets/svg/background-v3.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.illustration1,
+.illustration2{
+    width: 100%;
+    z-index: 2;
+}
+
+@media (max-width: 767.98px) {
+
+    .container{
+        font-size: 14px;
+    }
+
+    .illustration1,
+    .illustration2{
+        display: none;
+    }
+
+}
+
+.react{
+    background-color: #61DBFB;
+}
+
+.vue{
+    background-color: #47CA8C;
+}
+
+.node{
+    background-color: #86BD04;
+}
+
+.mysql{
+    background-color: #61DBFB;
+}
+
+.php{
+    background-color: #858EBB;
+}

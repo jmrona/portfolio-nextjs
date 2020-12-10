@@ -1,0 +1,17 @@
+.container{
+    width: 100vw !important;
+    min-height: 100vh !important;
+    background:  url(../public/assets/svg/background-v3.svg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+
+    .container{
+        font-size: 15px;
+    }
+
+}

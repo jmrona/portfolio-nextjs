@@ -1,65 +1,60 @@
 import Head from 'next/head'
+import { Layout } from '../components/Layout'
+// import '../styles/home.scss'
 import styles from '../styles/Home.module.css'
+
+import {
+    Container, 
+    Row, 
+    Col, 
+    Button} 
+    from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <>
+            <Head>
+                <title>JmRona</title>
+            </Head>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+            <Layout>
+                <Container fluid className={styles.container}>
+                    <Row className="d-flex pt-4 align-items-center justify-content-center">
+                        <Col 
+                        className="d-flex justify-content-center"
+                        lg={6}>
+                            <div className={styles.presentation}>
+                                <h1>
+                                    I'm <span>J</span><span>o</span><span>s</span><span>e</span> <br /> Romero
+                                </h1>
+                                <p>
+                                    I’m a Spanish web developer based in Bristol and available for full-time roles & freelance projects.
+                                </p>
+                                <Button 
+                                    variant="outline-primary"
+                                    size="lg" 
+                                    block
+                                    className="btnCustom"
+                                    href="https://drive.google.com/file/d/1Ddwti5wt_BTmVmsO31yT_Hz9zSZTLBMG/view?usp=sharing"
+                                >
+                                    Get my resume
+                                </Button>
+                            </div>
+                        </Col>
+                        <Col 
+                        className="d-flex justify-content-center"
+                        lg={6}>
+                            <img
+                                src="../assets/svg/illustration1.svg" 
+                                alt="desk ilustration" 
+                                className={styles.imgPresentation} 
+                            />
+                        </Col>
+                    </Row>
+                </Container>
+            </Layout>
+            
+        </>
   )
 }

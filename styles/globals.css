@@ -1,9 +1,20 @@
-html,
-body {
+:root {
+  --white-color: #F2F2F2;
+  --white-color2: #E6E6E6;
+  --black-color: #393E46;
+  --light-blue: #bed5ff;
+  --blue-color: #0f4f7a;
+  --dark-blue: #001c41;
+}
+
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 a {
@@ -11,6 +22,42 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+body{
+  font-size: 20px;
+  font-family: "Exo" !important;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Baloo Bhai" !important;
+}
+
+h1.title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8em;
+  opacity: 10%;
+  letter-spacing: -0.05em;
+  position: relative;
+  top: 0.15em;
+  left: 0em;
+  z-index: 0;
+  color: var(--black-color)
+}
+
+h1.dark {
+  color: var(--white-color)
+}
+
+@media (max-width: 767.98px) {
+
+  body{
+    font-size: 14px;
+  }
+
+  h1.title {
+    font-size: 5em;
+    top: 0.15em;
+  }
+
 }

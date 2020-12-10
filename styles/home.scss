@@ -1,0 +1,132 @@
+  /* 
+  .bg-light {
+    background: url(./assets/svg/background-v3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+@use 'colours';
+
+    .container{
+        width: 100vw !important;
+        height: 100vh !important;
+        background: url(../public/assets/svg/background-v1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+  
+    .presentation{
+        background-color: $black-color;
+        color: var(--white-color);
+        padding: 1.5em;
+        width: 24em;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        cursor: default ;
+
+        h1 {
+            opacity: 100%;
+            font-size: 5em;
+            font-weight: lighter;
+            line-height: 0.9em;
+            padding-bottom: 0.3em;
+            letter-spacing: 3px;
+            justify-items: center;
+            
+            span{
+                display: inline-block;
+                transition: .3s ease;
+
+                &:hover {
+                    color: var(--dark-blue);
+                    transform: translateY(-5px);
+                    transform: rotateZ(10deg);
+                }
+            }
+        }
+
+        p{
+            letter-spacing: 1px;
+        }
+        
+        button{
+            align-self: center;
+        }
+
+        &:after{
+            content:" ";
+            position: relative;
+            display: block;
+            left: 21.5em;
+            top: -12em;
+            background-color: $black-color;
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+        }
+    }
+  
+  .imgPresentation{
+    width: 100%;
+    justify-items: end;
+    align-self: center;
+    padding: 20px;
+  }
+  
+  .btnCustom{
+    background-color: red !important;
+    /* background-color: var(--blue-color); */
+  }
+  
+  .btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .btn-blue-outline {
+    border: 2px solid $blue-color;
+    color: $blue-color;
+    background: linear-gradient(to left, transparent 50%, $blue-color 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+  }
+  
+  .lblueOutline {
+    border: 2px solid $light-blue;
+    color: $light-blue;
+    background: linear-gradient(to left, transparent 50%, $blue-color 50%) right;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+  }
+  
+  .lblueOutline:hover,
+  .btn-blue-outline:hover
+  {
+    background-position: left;
+  }
+
+
+
+
+
+
+  @media (max-width: 767.98px) {
+    .presentation {
+      width: 95%;
+      padding-bottom: 1em;
+
+        &:after {
+            left: 11.5em;
+            top: 2em;
+        }
+    }
+  }
+  
