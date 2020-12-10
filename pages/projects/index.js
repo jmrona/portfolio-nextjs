@@ -15,8 +15,8 @@ export default function Projects() {
             img: 'assets/img/portfolio.jpg',
             title: 'Portfolio', 
             description: 'This is my first web page where I show the users who visit it my work experience and my projects. In addition to the possibility of <b>downloading my resume</b> and contacting me through a <b>contact form</b>.<br/><br/>To design this website I used <b>Figma to get a visual idea</b> of what I was looking for. And to develop it I have used <b>Next JS</b> to take advantage of my React knowledge and learn a new tool. Besides I use <a href="https://www.emailjs.com/"><b>Email JS</b></a> to be able to send emails', 
-            urlRepository: '#', 
-            urlWebsite: '', 
+            urlRepository: 'https://github.com/jmrona/portfolio-nextjs', 
+            urlWebsite: 'jmrona.vercel.app', 
             skills: [
                 {name: 'Next JS'},
                 {name: 'Bootstrap'},

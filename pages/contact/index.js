@@ -47,21 +47,25 @@ export default function contact() {
         // Validate email
         if(!validator.isEmail(email.trim())){
             Swal.fire('Watch out!','Do not forget to provide a email', 'warning')
+            setDisabled(false);
             return;
         }
         // Validate name
         if(validator.isEmpty(name.trim())){
             Swal.fire('Watch out!','Do not forget to provide a name', 'warning')
+            setDisabled(false);
             return;
         }
         // Validate subject
         if(validator.isEmpty(subject.trim())){
             Swal.fire('Watch out!','Do not forget to provide the subject', 'warning')
+            setDisabled(false);
             return;
         }
         // Validate message
         if(validator.isEmpty(message.trim())){
             Swal.fire('Watch out!','Do not forget to provide the message', 'warning')
+            setDisabled(false);
             return;
         }
 
