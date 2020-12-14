@@ -20,6 +20,7 @@ export default function Projects() {
             skills: [
                 {name: 'Next JS'},
                 {name: 'Bootstrap'},
+                {name: 'Framer Motion'},
                 {name: 'EmailJS'},
             ]
         },
