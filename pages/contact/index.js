@@ -110,6 +110,7 @@ export default function contact() {
                             <h1 className="title dark">Contact</h1>
                         </Col>
                     </Row>
+                    <Col sm={12} ><br/><br/></Col>
                     <Row className="d-flex h-100 pb-5 align-content-center justify-content-center">
                         <Col sm={12} ><br/><br/><br/></Col>
                         <Col sm={3} >
