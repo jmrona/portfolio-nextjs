@@ -1,6 +1,6 @@
 .container{
     width: 100vw !important;
-    height: 100vh !important;
+    min-height: 100vh !important;
     background:  url(../public/assets/svg/background-v1.svg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
