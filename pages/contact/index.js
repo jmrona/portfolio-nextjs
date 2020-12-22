@@ -29,11 +29,11 @@ export default function contact() {
 
     const recaptchaRef = React.createRef();
 
-    /*
-        const service_gmail = '';
-        const template_email = '';
-        const userID = '';
-    */
+    
+        const service_gmail = 'service_pwqklgs';
+        const template_email = 'template_3jt4s3o';
+        const userID = 'user_ueJuu7yLZJeokwB7FxsMo';
+    
 
     const onChange = (value) => {
         console.log("Captcha value:", value);
