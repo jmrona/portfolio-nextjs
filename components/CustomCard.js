@@ -20,7 +20,7 @@ export const CustomCard = ({img, title, description, urlRepository, urlWebsite, 
                                 key={index} 
                                 className="badge badge-dark mr-1 p-1"
                             >
-                                {skill.name}
+                                {skill}
                             </span>
                         ))
                     }
