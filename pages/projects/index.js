@@ -9,7 +9,7 @@ import { CustomCard } from '../../components/CustomCard'
 // import { BiWorld } from 'react-icons/bi';
 
 export default function Projects({projects}) {
-    console.log(projects)
+    // console.log(projects)
 
     // const projects = [
     //     {
