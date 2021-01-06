@@ -6,8 +6,27 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Layout } from '../../components/Layout'
 import { ExpCard } from '../../components/ExpCard'
 
-export default function experience({jobs}) {
+export default function experience() {
     
+    const jobs = [
+        {
+            img: 'assets/img/takeatip.jpg',
+            role: 'FullStack web developer',
+            description: 'Take a tip is a leading market research and consulting company with continuous improvement programs with mystery shopper services, studies, surveys and training. <br/>During my time at Take a tip, we managed to <b>increase the performance of the web application by 20%</b> by improving the structure of the databases. In addition to creating <b>new features</b> for the client as a comparison of data obtained during the evaluation, etc.On the other hand, we improved the design of the web application in order to achieve a better <b>user experience</b>.',
+            date: 'Jan 2016 - Sep 2017',
+            urlWebsite: 'https://takeatip.es',
+            visible: true
+        },
+        {
+            img: 'assets/img/comunica-web.jpg',
+            role: 'Web developer',
+            description: 'Comunicaweb is a digital marketing company which offers SEO services, social networks, advertising, web design, etc. <br/>This was my first professional experience in web development after finishing my higher education in systems administration. Here I learned <b>object-oriented programming</b> and how to structure files in a web project with the <b>MVC design pattern</b> (model-view-controller). In the design part, I learned to use tools like <b>Photoshop</b> to create web designs and modify images that would later be used in a web page.',
+            date: 'Mar 2015 - Jun 2015',
+            urlWebsite: 'https://comunica-web.com/',
+            visible: true
+        },
+    ]
+
     return (
         <>
             <Head>
@@ -51,6 +70,7 @@ export default function experience({jobs}) {
                                 </Col>
                             ))
                         }
+
                         <Col sm={12} ><br/><br/></Col>
                     </Row>
                 </Container>
@@ -59,11 +79,11 @@ export default function experience({jobs}) {
     )
 };
 
-export async function getServerSideProps({params}){
+// export async function getServerSideProps({params}){
 
-    const res = await fetch(`https://backend-portfolio-jmrona.herokuapp.com/api/experience`)
-    const data = await res.json()
-    const {experiences: jobs} = data;
+//     const res = await fetch(`https://backend-portfolio-jmrona.herokuapp.com/api/experience`)
+//     const data = await res.json()
+//     const {experiences: jobs} = data;
 
-    return { props: {jobs} }
-};
+//     return { props: {jobs} }
+// };
