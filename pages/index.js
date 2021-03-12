@@ -36,7 +36,7 @@ export default function Home() {
                                     size="lg" 
                                     block
                                     className="btnCustom"
-                                    href="https://drive.google.com/file/d/194k72k6TinR2s_mfCRj4es4RM6z-Qz8g/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/18DHHdZ5GwiRLBfYOHP1e9mCWzmDAPupT/view?usp=sharing"
                                 >
                                     Get my resume
                                 </Button>
