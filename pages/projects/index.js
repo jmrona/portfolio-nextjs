@@ -37,9 +37,17 @@ export default function Projects() {
             skills: ['MongoDB','Express JS','React JS','Node JS','Redux','API restful','JWT','Heroku']
         },
         {
+            img: 'assets/img/users.png',
+            title: 'Admin panel', 
+            description: 'This is admin panel template that I have <b>developed with PHP using the Laravel</b> framework for the backend and <b>React JS</b> for the frontend. <br/><br/>The idea of this project was to create <b>a admin website for a ecommerce</b> where can create products and upload pictures of it, <b>create categories</b> and classify the products, after <b>logging </b> previously with a admin account.', 
+            urlRepository: 'https://github.com/jmrona/ecommerce-controlpanel-template', 
+            urlWebsite: '', 
+            skills: ['React JS','Laravel','SASS','MySQL']
+        },
+        {
             img: 'assets/img/chr-photography.jpg',
             title: 'Chr-photography', 
-            description: 'This is the first and only project that I have <b>developed with PHP using the Laravel</b> framework for the backend and <b>Vue JS</b> for the frontend. <br/><br/>The idea of this project was to create <b>a website for a photographer</b> where he could upload his photos to an image gallery, <b>create categories</b> and classify the photos, after <b>logging in</b> previously. In addition to a about section and a contact form.', 
+            description: 'This is the first project that I have <b>developed with PHP using the Laravel</b> framework for the backend and <b>Vue JS</b> for the frontend. <br/><br/>The idea of this project was to create <b>a website for a photographer</b> where he could upload his photos to an image gallery, <b>create categories</b> and classify the photos, after <b>logging in</b> previously. In addition to a about section and a contact form.', 
             urlRepository: 'https://github.com/jmrona/chr-fotografia', 
             urlWebsite: '', 
             skills: ['Vue JS','Laravel','Vuetify','MySQL']
