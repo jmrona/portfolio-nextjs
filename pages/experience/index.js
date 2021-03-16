@@ -10,6 +10,14 @@ export default function experience() {
     
     const jobs = [
         {
+            img: 'assets/img/jmrona.svg',
+            role: 'Web developer - Freelance',
+            description: 'During my time as a freelance, I have been developing tools and websites using <b>PHP and its framework Laravel<b/> for the backend and <b>JavaScript with React</b> for the frontend. You can find some of those projects in projects section.',
+            date: 'Jun 2020 - Present',
+            urlWebsite: '',
+            visible: true
+        },
+        {
             img: 'assets/img/takeatip.jpg',
             role: 'FullStack web developer',
             description: 'Take a tip is a leading market research and consulting company with continuous improvement programs with mystery shopper services, studies, surveys and training. <br/>During my time at Take a tip, we managed to <b>increase the performance of the web application by 20%</b> by improving the structure of the databases. In addition to creating <b>new features</b> for the client as a comparison of data obtained during the evaluation, etc.On the other hand, we improved the design of the web application in order to achieve a better <b>user experience</b>.',
