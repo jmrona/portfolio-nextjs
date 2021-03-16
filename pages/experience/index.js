@@ -12,9 +12,9 @@ export default function experience() {
         {
             img: 'assets/img/jmrona.svg',
             role: 'Web developer - Freelance',
-            description: 'During my time as a freelance, I have been developing tools and websites using <b>PHP and its framework Laravel<b/> for the backend and <b>JavaScript with React</b> for the frontend. You can find some of those projects in projects section.',
+            description: 'During my time as a freelance, I have been developing tools and websites using <b>PHP and its framework Laravel</b> for the backend and <b>JavaScript with React</b> for the frontend. You can find some of those projects in projects section.',
             date: 'Jun 2020 - Present',
-            urlWebsite: '',
+            urlWebsite: 'https://jmrona.vercel.app/projects',
             visible: true
         },
         {
